@@ -7,24 +7,27 @@
 .appbar {
     width: 100%;
     display: flex;
-    background: white;
+    background-color: white;
     top: 0;
+    position: relative;
     padding: 5px 10px;
-    box-shadow: 0px 10px 24px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
     opacity: .95;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
 
-.appbar-title{
+.appbarTitle{
     font-size: xx-large;
     color: black;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.drawer-icon {
+.drawerIcon {
     padding: 2px;
     background-color: white;
 }
@@ -34,20 +37,21 @@
     height: 100%;
     transition: 250ms;
     position: fixed;
-    box-shadow:  10px 24px 24px rgba(0,0,0,0.25);
     background-color: white;
+    z-index: 2;
 }
 
-.drawer-items{
+.drawerItems{
     height: 95%;
     width: 100%;
     overflow: auto;
 }
 
-.menu-data:hover{
+.menuData:hover{
     background-color: gray;
 }
-.menu-data{
+
+.menuData{
     text-decoration: none;
     color: black;
     padding: 5px;
@@ -57,10 +61,26 @@
     display: flex;
 }
 
-.drawer-tile{
+.drawerTile{
   width: 100%;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.actions {
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.actions:hover,
+.actions:active {
+  background-color: grey;
 }

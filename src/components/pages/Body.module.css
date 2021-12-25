@@ -1,0 +1,48 @@
+.header{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.categoryController {
+  width: 100%;
+  list-style: none;
+  margin: 10px 0px 20px 0px;
+  display: flex;
+  min-width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryController li{
+    width: 15%;
+}
+
+.categoryController button {
+  border-style: none;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  border: 1px solid black;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.categoryController button:hover,
+.categoryController button:active,
+
+.categoryController button.hover{
+    color: white;
+    background-color: grey;
+}
+
+/* .categoryController button.active {
+  color: black;
+  background-color: white;
+} */
+
