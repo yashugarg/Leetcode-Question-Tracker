@@ -1,55 +1,47 @@
-import { createContext, useState } from 'react'
+import { createContext, useState } from "react";
 
 const UserContext = createContext({
-    user: {},
-    token: '',
-    session: '',
-    login: (token, session) => { },
-    logout: () => { },
-    setUserData: (data) => { },
-    isLoggedIn: () => false,
+  userName: "",
+  token: "",
+  session: "",
+  setToken: (token) => {},
+  setSession: (session) => {},
+  logout: () => {},
+  setUserName: (username) => {},
+  isLoggedIn: () => false,
 });
 
 export function UserContextProvider(props) {
-    const [userData, setUserData] = useState({})
-    const [loginToken, setLoginToken] = useState('')
-    const [loginSession, setLoginSession] = useState('')
+  const [userName, setUserName] = useState("");
+  const [token, setToken] = useState("");
+  const [session, setSession] = useState("");
 
-    function loginHandler(token, session) {
-        setLoginToken(token);
-        setLoginSession(session);
-    }
+  function logoutHandler() {
+    setUserName("");
+    setToken("");
+    setSession("");
+  }
 
-    function logoutHandler() {
-        setLoginToken('');
-        setLoginSession('');
-    }
+  function isLoggedIn() {
+    return session !== "" && userName !== "";
+  }
 
-    function setUserDataHadler(data) {
-        setUserData(data);
-    }
+  const context = {
+    userName: userName,
+    token: token,
+    session: session,
+    setToken: setToken,
+    setSession: setSession,
+    setUserName: setUserName,
+    logout: logoutHandler,
+    isLoggedIn: isLoggedIn,
+  };
 
-    function isLoggedInHandler() {
-        return !(loginSession === '' || loginToken === '');
-    }
-
-    const context = {
-        user: userData,
-        token: loginToken,
-        session: loginSession,
-        login: loginHandler,
-        logout: logoutHandler,
-        setUserData: setUserDataHadler,
-        isLoggedIn: isLoggedInHandler,
-    };
-
-    return (
-        <UserContext.Provider value={context}>
-            {props.children}
-        </UserContext.Provider>
-    )
+  return (
+    <UserContext.Provider value={context}>
+      {props.children}
+    </UserContext.Provider>
+  );
 }
 
 export default UserContext;
-
-

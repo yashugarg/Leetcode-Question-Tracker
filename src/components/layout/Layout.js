@@ -1,13 +1,11 @@
-import classes from './Layout.module.css';
+import classes from "./Layout.module.css";
 
 function Layout(props) {
-    return (
-        <div>
-            <main className={classes.main}>
-                {props.children}
-            </main>
-        </div>
-    )
+  return (
+    <div>
+      <main className={classes.main}>{props.children}</main>
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;

@@ -1,67 +1,67 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .appbar {
-    width: 100%;
-    display: flex;
-    background-color: white;
-    top: 0;
-    position: relative;
-    padding: 5px 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-    opacity: .95;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 3;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  top: 0;
+  position: relative;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  opacity: 0.95;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
 }
 
-.appbarTitle{
-    font-size: xx-large;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.appbarTitle {
+  font-size: xx-large;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drawerIcon {
-    padding: 2px;
-    background-color: white;
+  padding: 2px;
+  background-color: white;
 }
 
-.drawer{
-    width: 25%;
-    height: 100%;
-    transition: 250ms;
-    position: fixed;
-    background-color: white;
-    z-index: 2;
+.drawer {
+  width: 25%;
+  height: 100%;
+  transition: 250ms;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
 }
 
-.drawerItems{
-    height: 95%;
-    width: 100%;
-    overflow: auto;
+.drawerItems {
+  height: 95%;
+  width: 100%;
+  overflow: auto;
 }
 
-.menuData:hover{
-    background-color: gray;
+.menuData:hover {
+  background-color: gray;
 }
 
-.menuData{
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    width: 95%;
-    height: 100%;
-    align-items: center;
-    display: flex;
+.menuData {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  width: 95%;
+  height: 100%;
+  align-items: center;
+  display: flex;
 }
 
-.drawerTile{
+.drawerTile {
   width: 100%;
   height: 40px;
   display: flex;

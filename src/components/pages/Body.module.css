@@ -1,12 +1,11 @@
-.header{
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+.header {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-
 
 .categoryController {
   width: 100%;
@@ -18,8 +17,8 @@
   justify-content: center;
 }
 
-.categoryController li{
-    width: 15%;
+.categoryController li {
+  width: 15%;
 }
 
 .categoryController button {
@@ -35,14 +34,12 @@
 
 .categoryController button:hover,
 .categoryController button:active,
-
-.categoryController button.hover{
-    color: white;
-    background-color: grey;
+.categoryController button.hover {
+  color: white;
+  background-color: grey;
 }
 
 /* .categoryController button.active {
   color: black;
   background-color: white;
 } */
-
