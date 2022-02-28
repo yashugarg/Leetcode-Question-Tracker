@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
-import Body from "./components/pages/Body";
-import Profile from "./components/pages/Profile";
+import Body from "./pages/Body";
+import Profile from "./pages/Profile";
 import MainNavigation from "./components/layout/MainNavigation";
 import axios from "axios";
 import { serverUrl } from "./store/urls";
